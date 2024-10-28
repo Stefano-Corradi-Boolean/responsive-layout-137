@@ -1,0 +1,23 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+.container{
+  /* cercare il più possibile di gestire le larchezze con vw perché in caso di scrollbar laterale si rischia di spaccare la pagina */
+  /* width: 100vw; */
+  width: 100%;
+  height: 100vh;
+  background: brown;
+  color: lightgray;
+  text-align: justify;
+
+  overflow: auto;
+}

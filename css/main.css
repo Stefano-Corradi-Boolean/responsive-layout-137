@@ -1,0 +1,152 @@
+:root{
+    --primary-color: #0A84FD;
+    --primary-color-light: #B5DDFF;
+    --secondary-color: #9792E4;
+    --text-color: #141414;
+    --white-color: #fff;
+    --dark-grey: #333333;
+    --accent-color: #FDC15F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* layout */
+
+.debug{
+    background-color: rgba(103, 175, 103, .2);
+    border: 1px solid black;
+    min-height: 50px;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: 100%;
+    padding: 20px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-none{
+    display: none;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+/* text */
+.text-center{
+    text-align: center;
+}
+
+.white-text{
+    color: var(--white-color);
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+
+.secondary-color{
+    color: var(--secondary-color);
+}
+
+.accent-color{
+    color: var(--accent-color);
+}
+
+/* borders */
+.rouded{
+    border-radius: 20px;
+}
+
+.rouded-bg{
+    border-radius: 50px;
+}
+
+.rouded-50{
+    border-radius: 50%;
+}
+
+/* buttons */
+
+
+
+/* card */
+
+.card{
+    min-height: 300px; /* DEBUG */
+}
+
+.testimonial-card{
+    margin: 30px 0; 
+    padding: 20px;
+    min-height: 150px; /* DEBUG */
+}
+
+
+
+
+/****************** MEDIA QUERY  ****************/
+
+/* tablet */
+@media (min-width:768px){
+    #intro .col{
+        width: calc(100% / 3);
+    }
+    #intro .col:first-child{
+        width: calc(100% / 1.5);
+    }
+    #planning .col{
+        width: 50%;
+    }
+    .testimonial-card{
+        display: flex;
+    }
+    #benefits .col{
+        width: calc(100% / 2);
+    }
+    #aboutus .col:first-child{
+        width: calc(100% - 290px);
+    }
+    #aboutus .col:last-child{
+        width: 290px;
+    }
+}
+
+/* desktop */
+@media (min-width:1200px){
+    .d-xl-none{
+        display: none;
+    }
+    .d-xl-block{
+        display: block;
+    }
+    #benefits .col{
+        width: calc(100% / 3);
+    }
+}
+
